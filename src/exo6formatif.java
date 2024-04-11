@@ -21,10 +21,6 @@ public class exo6formatif {
         int sum = 0;
         for (int i=0; i < array.size(); i++ ) {
             sum = sum + array.get(i);
-            {
-                sum = sum / (array.size());
-
-            }
 
         }
         return sum;
