@@ -9,11 +9,9 @@ public class exercisesformative3
         array.add(2);
         array.add(3);
 
-        int sum = sum(array);
-        System.out.println("The sum is " + sum);
+        System.out.println("The sum is " + sum(array));
 
-        double aver = avg(array);
-        System.out.println("The average is " + aver);
+        System.out.println("The average is " + avg(array));
 
         removeEven(array);
         System.out.println("After removing the even numbers: " + array);
@@ -24,12 +22,9 @@ public class exercisesformative3
     public static int sum(ArrayList<Integer> array)
     {
         int sum = 0;
-        for (int i=0; i < array.size(); i++ ) {
+        for (int i=0; i < array.size(); i++ )
+        {
             sum = sum + array.get(i);
-            {
-                sum = sum / (array.size());
-
-            }
 
         }
         return sum;
@@ -48,8 +43,10 @@ public class exercisesformative3
         return avg;
     }
     public static void removeEven(ArrayList<Integer> array) {
-        for (int i = 0; i < array.size(); i++) {
-            if (array.get(i) % 2 == 0) {
+        for (int i = 0; i < array.size(); i++)
+        {
+            if (array.get(i) % 2 == 0)
+            {
                 array.remove(i);
                 i--;
             }
